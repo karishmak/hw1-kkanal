@@ -1,5 +1,9 @@
 package cmu.edu.kkanal.hw1.cpe;
 
+/**
+ * @author karishma kanal 
+ * Class which consumes the cas and produces desired output
+ */
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.util.Iterator;
@@ -18,7 +22,9 @@ import cmu.edu.kkanal.hw1.type.GeneAnnotation;
 public class CasConsumer extends CasConsumer_ImplBase {
 
   /**
-   * @param
+   * This function processes the CAS and then writes the results to a file in given format
+   * @param CAS Cas to be processed
+   * @throws ResourceProcessException when some problem occurs with processing
    */
   @Override
   public void processCas(CAS arg0) throws ResourceProcessException {

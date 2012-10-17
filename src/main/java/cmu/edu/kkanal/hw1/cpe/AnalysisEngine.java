@@ -14,11 +14,17 @@ import cmu.edu.kkanal.hw1.type.SentenceAnnotation;
 
 public class AnalysisEngine extends JCasAnnotator_ImplBase {
 
+  /**
+   * Inputs a JCAS to the AnalysisComponent. The AnalysisComponent "owns" this JCAS until such time
+   * as Annotator_ImplBase.hasNext() is called and returns false. (Source: UIMA Documentation)
+   * Responsible for analysis of the text
+   * @param JCas  JCas for processing
+   * 
+   */
   @Override
   public void process(JCas aJCas) throws AnalysisEngineProcessException {
     // TODO Auto-generated method stub
     try {
-      PosTagNamedEntityRecognizer namedEntityRecognizer = new PosTagNamedEntityRecognizer();
       FSIndex index = aJCas.getAnnotationIndex(SentenceAnnotation.type);
       Iterator i = index.iterator();
       Tagger t = new Tagger(Tagger.BIOCREATIVE);
@@ -43,7 +49,7 @@ public class AnalysisEngine extends JCasAnnotator_ImplBase {
         }
 
       }
-    } catch (ResourceInitializationException e) {
+    } catch (Exception e) {
       e.printStackTrace();
     }
   }

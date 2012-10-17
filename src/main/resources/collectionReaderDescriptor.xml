@@ -1,14 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?><casConsumerDescription xmlns="http://uima.apache.org/resourceSpecifier">
+<?xml version="1.0" encoding="UTF-8"?><collectionReaderDescription xmlns="http://uima.apache.org/resourceSpecifier">
   <frameworkImplementation>org.apache.uima.java</frameworkImplementation>
-  <implementationName>cmu.edu.kkanal.hw1.cpe.CasConsumer</implementationName>
+  <implementationName>cmu.edu.kkanal.hw1.cpe.FileCollectionReader</implementationName>
   <processingResourceMetaData>
-    <name>casConsumerDescriptor</name>
+    <name>collectionReaderDescriptor</name>
     <description/>
     <version>1.0</version>
     <vendor/>
     <configurationParameters>
       <configurationParameter>
-        <name>output_file_path</name>
+        <name>input_file_path</name>
         <type>String</type>
         <multiValued>false</multiValued>
         <mandatory>true</mandatory>
@@ -16,33 +16,33 @@
     </configurationParameters>
     <configurationParameterSettings>
       <nameValuePair>
-        <name>output_file_path</name>
+        <name>input_file_path</name>
         <value>
-          <string>.\\src\\main\\resources\\data\\hw1-kkanal.out</string>
+          <string>.\\src\\main\\resources\\data\\sample.in</string>
         </value>
       </nameValuePair>
     </configurationParameterSettings>
     <typeSystemDescription>
       <imports>
-        <import location="../type_system/typeSystemDescriptor.xml"/>
+        <import location="../resources/typeSystemDescriptor.xml"/>
       </imports>
     </typeSystemDescription>
     <typePriorities/>
     <fsIndexCollection/>
     <capabilities>
       <capability>
-        <inputs>
-          <type allAnnotatorFeatures="true">cmu.edu.kkanal.hw1.type.GeneAnnotation</type>
-        </inputs>
-        <outputs/>
+        <inputs/>
+        <outputs>
+          <type allAnnotatorFeatures="true">cmu.edu.kkanal.hw1.type.SentenceAnnotation</type>
+        </outputs>
         <languagesSupported/>
       </capability>
     </capabilities>
     <operationalProperties>
-      <modifiesCas>false</modifiesCas>
+      <modifiesCas>true</modifiesCas>
       <multipleDeploymentAllowed>false</multipleDeploymentAllowed>
-      <outputsNewCASes>false</outputsNewCASes>
+      <outputsNewCASes>true</outputsNewCASes>
     </operationalProperties>
   </processingResourceMetaData>
   <resourceManagerConfiguration/>
-</casConsumerDescription>
+</collectionReaderDescription>

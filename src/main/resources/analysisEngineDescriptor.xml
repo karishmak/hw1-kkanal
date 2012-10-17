@@ -3,7 +3,7 @@
   <primitive>true</primitive>
   <annotatorImplementationName>cmu.edu.kkanal.hw1.cpe.AnalysisEngine</annotatorImplementationName>
   <analysisEngineMetaData>
-    <name>aeDescriptor</name>
+    <name>analysisEngineDescriptor</name>
     <description/>
     <version>1.0</version>
     <vendor/>
@@ -11,7 +11,7 @@
     <configurationParameterSettings/>
     <typeSystemDescription>
       <imports>
-        <import location="../type_system/typeSystemDescriptor.xml"/>
+        <import location="../resources/typeSystemDescriptor.xml"/>
       </imports>
     </typeSystemDescription>
     <typePriorities/>

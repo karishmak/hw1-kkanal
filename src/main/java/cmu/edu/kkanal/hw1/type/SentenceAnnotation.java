@@ -11,8 +11,8 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** 
- * Updated by JCasGen Sat Oct 13 20:37:23 EDT 2012
- * XML source: E:/Lectures/Software Engineering/Workspace/hw1-kkanal/descriptors/type_system/typeSystemDescriptor.xml
+ * Updated by JCasGen Tue Oct 16 12:31:56 EDT 2012
+ * XML source: E:/Lectures/Software Engineering/Workspace/hw1-kkanal/src/main/resources/analysisEngineDescriptor.xml
  * @generated */
 public class SentenceAnnotation extends Annotation {
   /** @generated
