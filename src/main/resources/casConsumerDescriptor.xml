@@ -18,7 +18,7 @@
       <nameValuePair>
         <name>output_file_path</name>
         <value>
-          <string>.\\src\\main\\resources\\data\\hw1-kkanal.out</string>
+          <string>hw1-kkanal.out</string>
         </value>
       </nameValuePair>
     </configurationParameterSettings>
