@@ -25,14 +25,14 @@
     <collectionReader>
         <collectionIterator>
             <descriptor>
-                <import location="../resources/collectionReaderDescriptor.xml"/>
+                <import location="collectionReaderDescriptor.xml"/>
             </descriptor>
         </collectionIterator>
     </collectionReader>
     <casProcessors casPoolSize="2" processingUnitThreadCount="1">
 		<casProcessor deployment="integrated" name="Gene Annotator">
 	        <descriptor>
-                <import location ="../resources/analysisEngineDescriptor.xml"/>
+                <import location ="analysisEngineDescriptor.xml"/>
             </descriptor>
             <deploymentParameters/>
             <filter></filter>
@@ -45,7 +45,7 @@
         </casProcessor>
         <casProcessor deployment="integrated" name="CAS Consumer">
             <descriptor>
-                <import location="../resources/casConsumerDescriptor.xml"/>
+                <import location="casConsumerDescriptor.xml"/>
             </descriptor>
             <deploymentParameters/>
             <filter></filter>
